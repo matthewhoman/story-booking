@@ -1,1 +1,5 @@
-# This is my personal Story Book playground to show case components built by me
+# My Storybook Portfolio
+
+The static storybook is viewable on Github Pages
+
+https://matthewhoman.github.io/story-booking/?path=/story/introduction--page
