@@ -1,6 +1,6 @@
 # 📖 My Storybook Portfolio
 
-## Components are built using React, Typescript, Tailwindcss, and CSS modules
+Components are built using React, Typescript, Tailwindcss, and CSS modules
 
 Viewable on Github Pages where I've deployed the static content
 
