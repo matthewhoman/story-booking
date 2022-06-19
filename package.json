@@ -1,8 +1,11 @@
 {
   "name": "story-booking",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "http://matthewhoman.github.io/story-booking",
   "dependencies": {
+    "@headlessui/react": "^1.6.4",
+    "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -23,7 +26,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "npm run predeploy && gh-pages -d storybook-static"
   },
   "eslintConfig": {
     "extends": [
@@ -66,6 +71,7 @@
     "@storybook/testing-library": "0.0.13",
     "autoprefixer": "^10.4.7",
     "babel-plugin-named-exports-order": "0.0.2",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.14",
     "prop-types": "^15.8.1",
     "tailwindcss": "^3.1.3",

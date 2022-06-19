@@ -1,0 +1,7 @@
+# Deploy Storybook to GH Pages
+
+npm run deploy-storybook
+
+# Deployed To:
+
+https://matthewhoman.github.io/story-booking/
