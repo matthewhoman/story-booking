@@ -3,12 +3,12 @@ import React from 'react';
 import css from  '../style/Button.module.scss';
 
 export interface ButtonProps {
-    background: string;
-    color: string;
-    value: string;
-    width: string;
-    height: string;
-    handleClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    background?: string;
+    color?: string;
+    value?: string;
+    width?: string;
+    height?: string;
+    handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 const Button = (props: ButtonProps) => {

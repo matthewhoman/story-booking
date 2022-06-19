@@ -10,7 +10,7 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args: ButtonProps) => <Button {...args} />;
 
-export const SandBox = Template.bind({});
+export const Neutral = Template.bind({});
 
 export const ClickEvent = Template.bind({});
 ClickEvent.args = {

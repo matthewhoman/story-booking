@@ -1,7 +1,9 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { people } from './data/people';
+import { fruits } from './data/fruits';
 
-import Dropdown from '../components/Dropdown';//, { ButtonProps } from '../components/Button';
+import Dropdown, { DropDownItem } from '../components/Dropdown';//, { ButtonProps } from '../components/Button';
 
 export default {
   title: 'Dropdown',
@@ -10,13 +12,14 @@ export default {
 
 const Template: ComponentStory<typeof Dropdown> = (args: any) => <Dropdown {...args} />;//(args: ButtonProps) => <Dropdown {...args} />;
 
-export const SandBox = Template.bind({});
-SandBox.args = {
-  items: people
+export const ImageAndText = Template.bind({});
+ImageAndText.args = {
+  items: people,
+  handleChange: (item: DropDownItem) => console.log('Selected: ' + item.text)
 };
 
-// export const ClickEvent = Template.bind({});
-// ClickEvent.args = {
-//   value: 'Click Me!',
-//   handleClick: () => {alert("Clicked")}
-// };
+export const Text = Template.bind({});
+Text.args = {
+  items: fruits,
+  handleChange: (item: DropDownItem) => console.log('Selected: ' + item.text)
+};
